@@ -28,7 +28,18 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
     const area = baseValue * heightValue;
 
-    setTextValueByID('parallelogram-display', areaPlace);
+    setTextValueByID('parallelogram-display', area);
+})
+
+// Ellipse Area
+document.getElementById('btn-ellipse').addEventListener('click', function(){
+    const baseValue = getPartValueById('ellipse-first-readius');
+
+    const heightValue = getPartValueById('ellipse-second-readius');
+
+    const area = 3.1416 * baseValue * heightValue;
+
+    setTextValueByID('ellipse-display', area);
 })
 
 // reusable function
