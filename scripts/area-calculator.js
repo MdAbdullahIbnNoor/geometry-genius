@@ -4,7 +4,7 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
 
     const heightValue = getPartValueById('height-input');
 
-    const area = 0.5 * baseValue * heightValue;
+    const area = (0.5 * baseValue * heightValue).toFixed(2);
 
     setTextValueByID('area-display', area);
 })
@@ -15,7 +15,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 
     const heightValue = getPartValueById('length-input');
 
-    const area = baseValue * heightValue;
+    const area = (baseValue * heightValue).toFixed(2);
 
     setTextValueByID('rectangle-display', area);
 })
@@ -26,7 +26,7 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
 
     const heightValue = getPartValueById('heightP-input');
 
-    const area = baseValue * heightValue;
+    const area = (baseValue * heightValue).toFixed(2);
 
     setTextValueByID('parallelogram-display', area);
 })
@@ -37,7 +37,7 @@ document.getElementById('btn-ellipse').addEventListener('click', function(){
 
     const heightValue = getPartValueById('ellipse-second-readius');
 
-    const area = 3.1416 * baseValue * heightValue;
+    const area = (Math.PI * baseValue * heightValue).toFixed(2);
 
     setTextValueByID('ellipse-display', area);
 })
