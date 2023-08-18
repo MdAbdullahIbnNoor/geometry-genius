@@ -33,9 +33,9 @@
                           <h2 class="text-2xl font-semibold text-center">Triangle</h2>
                           <p class="text-base text-center">Area (A) = 0.5 x b x h</p>
                           <p class="p-2">
-                            <input type="text" id="base-input" class="border text-lg w-16 px-2 rounded-md bg-gray-200" placeholder="base">
+                            <input type="text" id="base-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="base">
                             <span class="ml-3 mr-2">cm</span>
-                            <input type="text" id="height-input" class="border text-lg w-16 px-2 rounded-md bg-gray-200" placeholder="height">
+                            <input type="text" id="height-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="height">
                             <span class="ml-3">cm</span>
                           </p>
                           <p class="text-xl">Area: <span id="area-display" class="text-red-600"></span> cm<sup>2</sup>
@@ -52,9 +52,9 @@
                         <h2 class="text-2xl font-semibold text-center">Rectangle</h2>
                         <p class="text-base text-center">Area (A) = W x l</p>
                         <p class="p-1">
-                          <input type="text" id="width-input" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="width">
+                          <input type="text" id="width-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="width">
                           <span class="ml-3 mr-2">cm</span>
-                          <input type="text" id="length-input" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="length">
+                          <input type="text" id="length-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="length">
                           <span class="ml-3">cm</span>
                         </p>
                         <p class="text-xl">Area: <span id="rectangle-display" class="text-red-600"></span> cm<sup>2</sup>
@@ -71,9 +71,9 @@
                         <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
                         <p class="text-base text-center">Area (A) = b x h</p>
                         <p class="p-1">
-                          <input type="text" id="baseP-input" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="base">
+                          <input type="text" id="baseP-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="base">
                           <span class="ml-3 mr-2">cm</span>
-                          <input type="text" id="heightP-input" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="height">
+                          <input type="text" id="heightP-input" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="height">
                           <span class="ml-3">cm</span>
                         </p>
                         <p class="text-xl">Area: <span id="parallelogram-display" class="text-red-600"></span> cm<sup>2</sup>
@@ -91,10 +91,10 @@
                         <p class="text-base text-center">Area (A) = π ab</p>
                         <p class="p-1">
                           <!-- ellipse first radius input -->
-                          <input type="text" id="ellipse-first-readius" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="large">
+                          <input type="text" id="ellipse-first-readius" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="large">
                           <span class="ml-3 mr-2">cm</span>
                           <!-- ellipse second radius input -->
-                          <input type="text" id="ellipse-second-readius" class="border text-lg w-20 px-2 rounded-md bg-gray-200" placeholder="short">
+                          <input type="text" id="ellipse-second-readius" class="border text-base w-20 px-2 rounded-md bg-gray-200" placeholder="short">
                           <span class="ml-3">cm</span>
                         </p>
                         <p class="text-xl">Area: <span id="ellipse-display" class="text-red-600"></span> cm<sup>2</sup>
@@ -107,9 +107,13 @@
                 </div>
             
                 <!-- area calculator -->
-                <div class="w-80 h-96 border-gray-600 border-2 rounded-xl">
+                <div class="w-96 h-96 border-gray-600 border-2 rounded-xl">
                     <h1 class="text-xl font-medium text-center mt-2">Area Calculator</h1>
-                    <hr class="w-3/5 mx-auto border-2 border-black">
+                    <hr class="w-3/5 mx-auto border-2 border-black mb-6">
+                    <div id="calculation-entry" class="px-6 text-violet-800 space-y-2">
+
+                    </div>
+
                 </div>
             </div>
         </main>
