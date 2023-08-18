@@ -9,16 +9,25 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
-        <header>
+        <header class="max-w-full mx-auto p-20 my-0 py-8">
+          <div class="navbar bg-blue-200 px-10 py-4 rounded-2xl">
+            <div class="flex-col justify-start">
 
+              <a class="btn btn-ghost normal-case text-4xl font-bold text-gray-600">Interactive</a>
+              <a class="btn btn-ghost normal-case text-2xl text-gray-600">Geometry Genius</a>
+            </div>
+            <div class="flex-1 justify-end">
+              <button class="btn btn-info w-24 text-white">Blog</button>
+            </div>
+          </div>
         </header>
-        <main class="container mx-auto">
+        <main class="max-w-full px-20 mx-auto m-0">
             <!-- container -->
             <div class="flex flex-col lg:flex-row mt-24">
                 <!-- shape container -->
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Triangle card -->
-                    <div class="card w-80 bg-base-100 shadow-xl px-8 space-y-1">
+                    <div class="card w-96 bg-base-100 shadow-xl px-8 space-y-1">
                         <figure><img src="/images/triangle.png" alt="Shoes" class="w-3/4" /></figure>
                         <div class="card-body">
                           <h2 class="text-2xl font-semibold text-center">Triangle</h2>
@@ -37,7 +46,7 @@
                         </div>
                     </div>
                     <!-- Rectangle card -->
-                    <div class="card w-80 bg-base-100 shadow-xl px-8 space-y-1">
+                    <div class="card w-96 bg-base-100 shadow-xl px-8 space-y-1">
                       <figure><img src="/images/rectangle.png" alt="rectangle" class="w-3/4" /></figure>
                       <div class="card-body">
                         <h2 class="text-2xl font-semibold text-center">Rectangle</h2>
@@ -56,7 +65,7 @@
                       </div>
                     </div>
                     <!-- Parallelogram -->
-                    <div class="card w-80 bg-base-100 shadow-xl px-8 space-y-1">
+                    <div class="card w-96 bg-base-100 shadow-xl px-8 space-y-1">
                       <figure><img src="/images/parallelogram.png" alt="Parallelogram" class="w-3/4" /></figure>
                       <div class="card-body">
                         <h2 class="text-2xl font-semibold text-center">Parallelogram</h2>
@@ -75,7 +84,7 @@
                       </div>
                     </div>
                     <!-- Ellipse -->
-                    <div class="card w-80 bg-base-100 shadow-xl px-8 space-y-1 mt-8">
+                    <div class="card w-96 bg-base-100 shadow-xl px-8 space-y-1 mt-8">
                       <figure><img src="/images/ellipse.png" alt="Ellipse" class="w-3/4" /></figure>
                       <div class="card-body">
                         <h2 class="text-2xl font-semibold text-center">Ellipse</h2>
